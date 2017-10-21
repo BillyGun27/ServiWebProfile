@@ -2,11 +2,17 @@
 <html>
   <head>
     <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/aos.css"  media="screen,projection"/>
     <style>
+    html {
+      font-family: 'Open Sans', sans-serif;
+    }
+        
     .nav-wrapper{
       background: #C4529D;
     }
@@ -18,6 +24,33 @@
     }
     .headcolor{
       background: #E16EA9;
+    }
+    .title{
+      width:25%;
+      padding:10px 20px;
+    }
+    .big-log{
+      background:url('img/main_title.jpg') no-repeat center center fixed;
+    }
+    @media only screen and (max-width: 1300px) {
+      .title {
+        width: 50%;
+      }
+      .carousel-item h1,.carousel-item h3{
+        font-size: 30px;
+      }
+      .carousel-item a{
+        font-size:20px;
+      }
+      .big-log{
+        background:url('img/phone_title.jpg');
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      .title {
+        width: 100%;
+      }
     }
     </style>
 
@@ -34,7 +67,7 @@
       <div class="navbar-fixed">
       <nav>
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img width="20%" src="img/servi_white.png" alt="servi"></a>
+            <a href="#" class="brand-logo"><img class="title" src="img/servi_white.png" alt="servi" ></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#download">Download</a></li>
@@ -52,7 +85,7 @@
         </div>
         
   <div class="carousel carousel-slider center" data-indicators="true">
-      <div class="carousel-item white-text" style="background:url('img/main_title.jpg') no-repeat center center fixed;" href="#one!">
+      <div class="big-log carousel-item white-text" href="#one!">
         
       </div>
       <div class="carousel-item red white-text" style="background:url('img/road.jpg')  no-repeat center center fixed; " href="#two!">
@@ -73,6 +106,19 @@
         <a class="waves-effect waves-light btn">SERVICE</a>
       </div>
     </div>
+
+    <div class="row center headcolor">
+          <br>
+        <center><h4 style="color:white">About Servi</h4></center>
+        <h6 style="padding:0 100px;padding-bottom:50px ;color:white">
+          Servi merupakan aplikasi berbasis Android yang bergerak di bidang pelayanan jasa transportasi online. 
+          Aplikasi ini bertujuan sebagai penghubung antara driver pemilik kendaraan dengan customer.
+          
+        </h6>
+      
+      </div>
+  
+
           
     <div class="container">
         <div class="section">
@@ -87,9 +133,10 @@
                 <h5>
                   <strong>
                       <ol>
-                          <li>Download Servi.id app untuk DRIVER</li>
-                          <li>Tentukan Harga</li>
-                          <li>Terima order</li>
+                          <li>Download Sevi Driver di Play Store</li>
+                          <li>Daftar dan ikuti persyaratannya</li>
+                          <li>Tentukan tarif dan terima order</li>
+                          <li>Enjoy your drive</li>
                       </ol>
                   </strong>
                 </h5>
@@ -106,9 +153,10 @@
                 <h5>
                   <strong>
                       <ol>
-                          <li>Download Servi.id app untuk USER</li>
-                          <li>Tawar Harga</li>
-                          <li>Pesan order</li>
+                          <li>Download Servi di Play Store</li>
+                          <li>Daftar dan ikuti persyaratannya</li>
+                          <li>Kirim order dan tawar tarif</li>
+                          <li>Nikmati perjalanan Anda</li>
                       </ol>
                   </strong>
                 </h5>
@@ -121,82 +169,67 @@
       </div>
 
       <div class="row center"   style="background:url('img/agreement.jpg')  no-repeat center center fixed;">
-          <h5 class="header col s12 light " style="color:white; padding:70px">A Mutual Agreement Between Two People </h5>
+          <h5 class="header col s12 light " style="color:white; padding:70px">Tawar Sesuai Kebutuhanmu </h5>
         </div>
 
     <div class="container">
         <div id="service" class="section scrollspy">
           <center><h1 class="headcolor">Service</h1></center>
     
-          <!--   Icon Section   -->
+         
           <div class="row" id="staggered-test">
-            <div class="col s12 m4" data-aos="fade-up">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                <h5 class="center">Speeds up development</h5>
+            <div class="col s12 m6" data-aos="fade-up">
+              
+                <h2 class="center"><i class="fa fa-motorcycle" style="font-size:80px;color:#E16EA9"></i></h2>
+                <h5 class="center">V-Bike</h5>
     
-                <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-              </div>
+                <p class="light">Naik sepda motor tanpa capek nyetir dan capek macet ke mana pun, kapan pun dengan Servi </p>
+              
+            </div>
+
+            <div class="col s12 m6" data-aos="fade-up">
+              
+                <h2 class="center"><i class="fa fa-car" style="font-size:80px;color:#E16EA9"></i></h2>
+                <h5 class="center">V-Car</h5>
+    
+                <p class="light">Naik mobil tanpa capek nyetir dan capek macet ke mana pun, kapan pun dengan Servi</p>
+              
             </div>
     
-            <div class="col s12 m4" data-aos="fade-up">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                <h5 class="center">User Experience Focused</h5>
-    
-                <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-              </div>
-            </div>
-    
-            <div class="col s12 m4" data-aos="fade-up">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                <h5 class="center">Easy to work with</h5>
-    
-                <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-              </div>
-            </div>
+          
           </div>
     
         </div>
       </div>
 
           <div class="row center" style="background:url('img/people-2601669_1920.jpg')  no-repeat center center fixed;">
-            <h5 class="header col s12 light" style="color:white;padding:70px">A Price that you want </h5>
+            <h5 class="header col s12 light" style="color:white;padding:70px">Harga yang Kamu Mau </h5>
           </div>
 
       <div class="container">
           <div id="feature" class="section scrollspy">
             <center><h1 class="headcolor">Feature</h1></center>
       
-            <!--   Icon Section   -->
-            <div class="row">
-              <div class="col s12 m4" data-aos="fade-up">
-                <div class="icon-block">
-                  <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                  <h5 class="center">Speeds up development</h5>
+            <div class="row" id="staggered-test">
+              <div class="col s12 m6" data-aos="fade-up">
+                
+                  <h2 class="center"><i class="material-icons" style="font-size:80px;color:rgb(194, 194, 0);">copyright</i></h2>
+                  <h5 class="center">Custom the Fare</h5>
       
-                  <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-                </div>
+                  <p class="light">Tentukan tarifmu, tawar, nikmati perjalanan dengan Servi</p>
+                
+              </div>
+  
+              <div class="col s12 m6" data-aos="fade-up">
+                
+                  <h2 class="center"><i class="material-icons" style="font-size:80px;color:#C4529D;">accessibility</i></h2>
+                  <h5 class="center">Experience</h5>
+      
+                  <p class="light">Pengalaman berkendara tanpa capek nyetir dan capek macet kapan pun dan di mana pun dengan V-Bike dan V-Car </p>
+                
               </div>
       
-              <div class="col s12 m4" data-aos="fade-up">
-                <div class="icon-block">
-                  <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                  <h5 class="center">User Experience Focused</h5>
-      
-                  <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-                </div>
-              </div>
-      
-              <div class="col s12 m4" data-aos="fade-up">
-                <div class="icon-block">
-                  <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                  <h5 class="center">Easy to work with</h5>
-      
-                  <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-                </div>
-              </div>
+            
             </div>
       
           </div>
@@ -204,7 +237,7 @@
 
           
 
-            <div style="background:url('img/drive-516376_1920.jpg')  no-repeat center center fixed;">
+            <div style="background:url('img/highway-1878906_1920.jpg')  no-repeat center center fixed;">
               <div class="container">
                 <div id="download" class="section scrollspy">
                   <h1 style="color:white">Download Now</h1>
@@ -239,24 +272,29 @@
             <div class="container">
               <div class="row">
                 <div class="col l6 s12">
-                  <h5 class="white-text">Footer Content</h5>
-                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                  <h5 class="white-text">Servi.id Company</h5>
+                  <p class="grey-text text-lighten-4">Jl. binari hexana 1011, Surabaya, Jawa Timur ,Indonesia</p>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#"><i class="fa fa-facebook-square" style="font-size:20px;color:white"></i> Facebook</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#"><i class="fa fa-twitter-square" style="font-size:20px;color:white"></i> Twitter</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#"><i class="fa fa-phone" style="font-size:20px;color:white"></i> CP : 1234567890</a></li>
+                  </ul>
+
                 </div>
                 <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text">Links</h5>
+                  <h5 class="white-text">Syarat dan ketentuan</h5>
                   <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Ketentuan umum</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Ketentuan pengendara</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#">Kebijakan privasi</a></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="footer-copyright">
               <div class="container">
-              © 2014 Copyright Text
-              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+              © 2017 Copyright Text
+              <a class="grey-text text-lighten-4 right" href="#!">All Rights Reserved</a>
               </div>
             </div>
           </footer>
