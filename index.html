@@ -40,6 +40,9 @@
       margin-right: auto;
       text-align: center;
     }
+    .side-nav li a{
+      font-size:25px;
+    }
     @media only screen and (max-width: 1300px) {
       .title {
         width: 50%;
@@ -50,15 +53,19 @@
       .carousel-item a{
         font-size:20px;
       }
-      .big-log{
-        background:url('img/phone_title.jpg');
-      }
+      
     }
 
     @media only screen and (max-width: 400px) {
       .title {
         width: 100%;
       }
+      .big-log{
+        background:url('img/phone_title.jpg');
+      }
+    }
+    #sidenav-overlay{
+      display:none;
     }
     </style>
 
@@ -82,7 +89,7 @@
                 <li><a href="#feature">Feature</a></li>
                 <li><a href="#service">Service</a></li>
             </ul>
-            <ul class="side-nav" id="mobile-demo" style="background-color:pink">
+            <ul class="side-nav" id="mobile-demo" style="background-color:rgb(255, 228, 233);">
               <br>
               <li><a href="#download">Download</a></li>
               <li><a href="#feature">Feature</a></li>
@@ -91,6 +98,7 @@
           </div>
         </nav>
         </div>
+        
         
   <div class="carousel carousel-slider center" data-indicators="true">
       <div class="big-log carousel-item white-text" href="#one!">
@@ -118,15 +126,9 @@
     <div class="row center headcolor">
           <br>
         <center><h4 style="color:white">About Servi</h4></center>
-<<<<<<< HEAD
         <h5 style="padding:0 100px;padding-bottom:50px ;color:white">
           Servi merupakan aplikasi berbasis Android yang bergerak di bidang pelayanan jasa transportasi online. 
           Aplikasi ini bertujuan sebagai penghubung antara driver pemilik kendaraan dengan customer.
-=======
-        <h6 style="padding:0 100px;padding-bottom:50px ;color:white">
-          <p>Servi merupakan aplikasi berbasis Android yang bergerak di bidang pelayanan jasa transportasi online.</p>
-          <p>Aplikasi ini bertujuan sebagai penghubung antara driver pemilik kendaraan dengan customer.</p>
->>>>>>> c50150358d00502ab286ead5779e68f9d78f4e14
           
         </h5>
       
@@ -137,16 +139,11 @@
     <div class="container">
         <div class="section">
             <br>
-<<<<<<< HEAD
           <center><h2 class="headcolor">How to use</h2></center>
-          <h2>DRIVER</h2>
-=======
-          <center><h1 class="headcolor">How to use</h1></center>
-          <div class="col s12 m3"><h2 class="center">DRIVER</h2></div>
->>>>>>> c50150358d00502ab286ead5779e68f9d78f4e14
+          <h2 class="center">DRIVER</h2>
           <div class="row">
               <div class="col s12 m3">
-                  <img width=50%; src="img/people.png" alt="demo" class="center">
+                  <img width=80%; src="img/people.png" alt="demo" class="center">
                 </div>
               <div class="col s12 m6" data-aos="fade-right">
                 <h5>
@@ -163,7 +160,7 @@
               </div>
           </div>
 
-          <div class="col s12 m3"><h2 class="center">USER</h2></div>
+      <h2 class="center">USER</h2>
           <div class="row">
               <div class="col s12 m3">
                   <img width=70%; src="img/twopeople.png" alt="demo"  class="center">
@@ -199,7 +196,7 @@
           <div class="row" id="staggered-test">
             <div class="col s12 m6" data-aos="fade-up">
               
-                <h2 class="center"><i class="fa fa-motorcycle" style="font-size:80px;color:#E16EA9"></i></h2>
+                <h2 class="center"><img width=20%; src="img/motor.png" alt="demo"></h2>
                 <h5 class="center">V-Bike</h5>
     
                 <p class="light center">Naik sepeda motor tanpa capek nyetir dan capek macet ke mana pun, kapan pun dengan Servi </p>
@@ -208,7 +205,7 @@
 
             <div class="col s12 m6" data-aos="fade-up">
               
-                <h2 class="center"><i class="fa fa-car" style="font-size:80px;color:#E16EA9"></i></h2>
+                <h2 class="center"><img width=20%; src="img/car.png" alt="demo"></h2>
                 <h5 class="center">V-Car</h5>
     
                 <p class="light center">Naik mobil tanpa capek nyetir dan capek macet ke mana pun, kapan pun dengan Servi</p>
@@ -273,7 +270,7 @@
             
                     <div class="col s12 m6 center">
                      
-                        <img width=10%; src="img/people.png" alt="demo">
+                        <img width=20%; src="img/people.png" alt="demo">
                         <h5 class="center" style="color:white">DRIVER</h5>
             
                         <a class="waves-effect waves-light btn" >DOWNLOAD NOW</a>
