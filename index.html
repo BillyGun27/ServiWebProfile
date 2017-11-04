@@ -45,7 +45,7 @@
     }
     @media only screen and (max-width: 1300px) {
       .title {
-        width: 50%;
+        width: 35%;
       }
       .carousel-item h1,.carousel-item h3{
         font-size: 30px;
@@ -56,12 +56,22 @@
       
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 800px) {
       .title {
-        width: 100%;
+        width: 50%;
+      }
+      a.brand-logo{
+        text-align: center;
+      }
+      
+    }
+
+    @media only screen and (max-width: 500px) {
+      .title {
+        width: 80%;
       }
       .big-log{
-        background:url('img/phone_title.jpg');
+        background:url('img/phone_title.jpg') no-repeat center center fixed;;
       }
     }
     #sidenav-overlay{
@@ -105,21 +115,21 @@
         
       </div>
       <div class="carousel-item red white-text" style="background:url('img/road.jpg')  no-repeat center center fixed; " href="#two!">
-          <br>
-        <h1>FREEDOM FOR USER</h1>
-         <h1>FREEDOM FOR DRIVER</h1>
+          <br><br><br>
         <h3 class="white-text">Available in PlayStore</h3>
-        <a class="waves-effect waves-light btn">Download Now !</a>
+        <a class="waves-effect waves-light btn" href="#download">Download Now !</a>
       </div>
       <div class="carousel-item amber white-text" style="background:url('img/navigation.jpg')  no-repeat center center fixed;" href="#three!">
         <br>
-        <h1>A NEW WAY TO TRAVEL</h1>
-        <a class="waves-effect waves-light btn">FEATURE</a>
+        <h1>KEMANA AJA TUJUAN KAMU</h1>
+        <h1>TENTUKAN SENDIRI TARIFNYA !</h1>
+       
       </div>
       <div class="carousel-item amber white-text" style="background:url('img/traffic.jpg')  no-repeat center center fixed;" href="#four!">
           <br>
-        <h1>A SERVICE FOR EVERY NEEDS</h1>
-        <a class="waves-effect waves-light btn">SERVICE</a>
+          <h1>KEMANA AJA TUJUAN KAMU</h1>
+          <h1>SEMUANYA SUKA SUKA KAMU !</h1>
+        
       </div>
     </div>
 
@@ -128,7 +138,7 @@
         <center><h4 style="color:white">About Servi</h4></center>
         <h5 style="padding:0 100px;padding-bottom:50px ;color:white">
           Servi merupakan aplikasi berbasis Android yang bergerak di bidang pelayanan jasa transportasi online. 
-          Aplikasi ini bertujuan sebagai penghubung antara driver pemilik kendaraan dengan customer.
+          Aplikasi ini bertujuan sebagai penghubung antara driver pemilik kendaraan dengan customer (penumpang).
           
         </h5>
       
@@ -185,7 +195,7 @@
       </div>
 
       <div class="row center"   style="background:url('img/agreement.jpg')  no-repeat center center fixed;">
-          <h5 class="header col s12 light " style="color:white; padding:70px">Tawar Sesuai Kebutuhanmu </h5>
+          <h5 class="header col s12 light " style="color:white; padding:70px">Tentukan sendiri tarifnya! </h5>
         </div>
 
     <div class="container">
@@ -219,7 +229,7 @@
       </div>
 
           <div class="row center" style="background:url('img/people-2601669_1920.jpg')  no-repeat center center fixed;">
-            <h5 class="header col s12 light" style="color:white;padding:70px">Harga yang Kamu Mau </h5>
+            <h5 class="header col s12 light" style="color:white;padding:70px">Semua suka-suka kamu </h5>
           </div>
 
       <div class="container">
@@ -292,18 +302,18 @@
                   <p class="grey-text text-lighten-4">Jl. Jojoran Gg. 1, Karang Mejangan, Surabaya, Jawa Timur</p>
                   <p class="grey-text text-lighten-4">Jam Kerja : Senin - Jum'at, 08.00 - 17.00 WIB</p>
                   <ul>
-                    <li><a class="grey-text text-lighten-3" href="#"><i class="fa fa-facebook-square" style="font-size:20px;color:white"></i> Facebook</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/Serviid-134704837188303/?modal=admin_todo_tour" target="_blank"><i class="fa fa-facebook-square" style="font-size:20px;color:white"></i> Facebook</a></li>
                     <li><a class="grey-text text-lighten-3" href="#"><i class="fa fa-twitter-square" style="font-size:20px;color:white"></i> Twitter</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#"><i class="fa fa-phone" style="font-size:20px;color:white"></i> CP : 088217254939</a></li>
+                    <li><div class="grey-text text-lighten-3 "><i class="fa fa-phone" style="font-size:20px;color:white"></i> CP : 088217254939</div> </li>
                   </ul>
 
                 </div>
                 <div class="col l4 offset-l2 s12">
                   <h5 class="white-text">Syarat dan ketentuan</h5>
                   <ul>
-                    <li><a class="grey-text text-lighten-3" href="#">Ketentuan umum</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#">Ketentuan pengendara</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#">Kebijakan privasi</a></li>
+                    <li><a class="grey-text text-lighten-3"  href="#modal1" >Ketentuan umum</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#modal2">Ketentuan pengendara</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#modal3">Kebijakan privasi</a></li>
                   </ul>
                 </div>
               </div>
@@ -316,6 +326,42 @@
             </div>
           </footer>
               
+          <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div style="color:white ; background:#E16EA9; padding:25px;"> 
+      <h4>Ketentuan Umum</h4>
+    </div>
+    <div class="modal-content">
+      <p>ikuti semua aturan yang ada</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Setuju</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div style="color:white ; background:#E16EA9; padding:25px;"> 
+      <h4>Ketentuan Pengendara</h4>
+    </div>
+    <div class="modal-content">
+      <p>ikuti semua aturan yang ada</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Setuju</a>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div style="color:white ; background:#E16EA9; padding:25px;"> 
+      <h4>Ketentuan Kebijakan Privasi</h4>
+    </div>
+    <div class="modal-content">
+      <p>ikuti semua aturan yang ada</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Setuju</a>
+    </div>
+  </div>
 
        <!--Import jQuery before materialize.js-->
       <script  type="text/javascript" src="js/jquery.min.js"></script>
@@ -329,12 +375,17 @@
      $('.carousel.carousel-slider').carousel({fullWidth: true});
      setInterval(function() {
        $('.carousel').carousel('next');
-      }, 4000); // every 2 seconds
+      }, 8000); // every 6 seconds
 
 
     AOS.init({
         easing: 'ease-in-out-sine'
       });
+
+      $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
   </script>
   </body>
 </html>
